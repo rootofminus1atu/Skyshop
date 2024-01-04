@@ -58,11 +58,12 @@ export default class CartManager {
                 </div>
                 <div class="col-8">
                     <div class="card-body d-flex flex-column h-100">
-                        <h5 class="card-title">${product.name}</h5>
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">${product.name}</h5>
+                            <p class="mb-auto"><strong>€${product.price}</strong></p>
+                        </div>
                         <p class="card-text">${product.shortDesc}</p>
-
-                        <div class="mt-auto d-flex justify-content-between text">
-                            <p class="my-auto"><strong>€${product.price}</strong></p>
+                        <div class="mt-auto d-flex justify-content-end text">
                             <div class="btn-group">
 
                             </div>
